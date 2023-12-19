@@ -27,7 +27,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - API_TOKEN="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"
+      - API_TOKEN=""
       - SUMMARIZER_TYPE="remote"
     container_name: back
     restart: on-failure
