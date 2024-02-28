@@ -6,7 +6,7 @@ from app.services.base_summarizer_service import BaseSummarizerService
 class LocalSummarizerService(BaseSummarizerService):
     def __init__(self):
         # Подготовка модели и токенайзера
-        model_name = "IlyaGusev/mbart_ru_sum_gazeta" # https://huggingface.co/IlyaGusev/mbart_ru_sum_gazeta
+        model_name = "IlyaGusev/mbart_ru_sum_gazeta"
         self.tokenizer = MBartTokenizer.from_pretrained(model_name)
         self.model = MBartForConditionalGeneration.from_pretrained(model_name)
 
